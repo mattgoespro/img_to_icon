@@ -1,0 +1,6 @@
+disable=
+    missing-function-docstring,
+    missing-module-docstring,
+    missing-class-docstring,
+    too-many-instance-attributes,
+    attribute-defined-outside-init

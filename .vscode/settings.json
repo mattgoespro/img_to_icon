@@ -1,0 +1,47 @@
+{
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.pycodestyle": "explicit",
+    "source.fixAll.pylint": "explicit",
+    "source.fixAll.sortImports": "explicit",
+    "source.organizeImports": "explicit",
+    "source.sortImports": "explicit"
+  },
+  "isort.check": true,
+  "pip-manager.source": "pypi",
+  "pylint.args": [
+    "--rcfile=${workspaceFolder}\\.pylintrc",
+    "--ignore=.venv"
+  ],
+  "editor.defaultFormatter": "ms-python.black-formatter",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "pylint.importStrategy": "fromEnvironment",
+  "pylint.severity": {
+    "convention": "Warning",
+    "refactor": "Warning"
+  },
+  "python.analysis.addImport.exactMatchOnly": true,
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.fixAll": [
+    "source.convertImportFormat",
+    "source.unusedImports"
+  ],
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "pythonIndent.keepHangingBracketOnLine": true,
+  "pythonIndent.trimLinesWithOnlyWhitespace": true,
+  "pythonIndent.useTabOnHangingIndent": true,
+
+  "python.missingPackage.severity": "Error",
+  "pylint.interpreter": ["${workspaceFolder}\\.venv\\Scripts\\python.exe"],
+  "python.createEnvironment.contentButton": "show",
+  "isort.interpreter": ["${workspaceFolder}\\.venv\\Scripts\\python.exe"]
+}
