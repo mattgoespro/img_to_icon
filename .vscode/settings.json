@@ -13,11 +13,8 @@
   },
   "isort.check": true,
   "pip-manager.source": "pypi",
-  "pylint.args": [
-    "--rcfile=${workspaceFolder}\\.pylintrc",
-    "--ignore=.venv"
-  ],
-  "editor.defaultFormatter": "ms-python.black-formatter",
+  "pylint.args": ["--rcfile=${workspaceFolder}\\.pylintrc", "--ignore=.venv"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "pylint.importStrategy": "fromEnvironment",

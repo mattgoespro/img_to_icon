@@ -1,3 +1,2 @@
-/.venv
-/DockerDesktopInstaller.exe
-/test.py
+.venv
+__pycache__

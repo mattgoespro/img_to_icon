@@ -76,16 +76,12 @@ class GUI:
             column=1,
         )
 
-        anti_aliasing_style = ttk.Style()
-        anti_aliasing_style.configure(
-            "AntiAliasCheckbutton.TCheckbutton",
-            font=("Arial", 8),
-        )
+        anti_aliasing_style = widget.create_style("Checkbutton.TCheckbutton")
         anti_aliasing_checkbox = ttk.Checkbutton(
             frame_root,
             text="Anti-aliasing",
             variable=self.anti_aliasing,
-            style="AntiAliasCheckbutton.TCheckbutton",
+            style=anti_aliasing_style,
         )
         anti_aliasing_checkbox.grid(row=1, column=0)
 
@@ -99,17 +95,8 @@ class GUI:
         return frame_right, preview_frame, preview_label, img
 
     def create_right_frame_content(self, frame_root: ttk.Frame):
-        preview_frame_style = ttk.Style()
-        preview_frame_style.configure(
-            "PreviewFrame.TFrame",
-            background="#dbdbdb",
-            relief="solid",
-            width=200,
-            height=200,
-        )
         preview_frame = widget.create_frame(
             frame_root,
-            style="PreviewFrame.TFrame",
         )
         preview_frame.pack(side="top", fill="both", expand=True)
 
@@ -135,7 +122,7 @@ class GUI:
 
     def convert_to_ico(self):
         input_image_path = self.file_path.get()
-        output_image_name = f"{self.file_path.get().split('.')[0]}.ico"
+        output_image_name = f"{self.file_path.get().split(".")[0]}.ico"
 
         if not input_image_path or not output_image_name:
             # self.status_label.config(
